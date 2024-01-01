@@ -25,7 +25,7 @@ namespace AntiVoid
         {
             Player Player = Player.Get(sender);
             WaypointBase.GetRelativePosition(Player.Position, out byte id, out _);
-            if (Player != null && Player.IsAlive && Player.Zone is MapGeneration.FacilityZone.None && (!WaypointBase.TryGetWaypoint(id, out WaypointBase waypoint) && waypoint is not ElevatorWaypoint))
+            if (Player != null && Player.IsAlive && Player.Zone is MapGeneration.FacilityZone.None && (WaypointBase.TryGetWaypoint(id, out WaypointBase waypoint) && waypoint is not ElevatorWaypoint))
             {
                 Player.IsGodModeEnabled = true;
                 Timing.CallDelayed(1f, () =>
