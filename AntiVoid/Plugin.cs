@@ -16,7 +16,7 @@ namespace AntiVoid
 {
     public class Plugin
     {
-        [PluginEntryPoint("AntiVoid","1.0.0","AntiVoid","X小左(XLittleLeft)")]
+        [PluginEntryPoint("AntiVoid","1.0.1","AntiVoid","X小左(XLittleLeft)")]
         void OnLoad()
         {
             EventManager.RegisterEvents(this);
